@@ -1,0 +1,77 @@
+<div class="row welcomeBadge">
+<h3 class="ml-auto pt-4 pr-2">Hi user !</h3>
+<img src="" id="tableBanner" />
+
+
+</div>
+<div class="row">
+    <h3>Please choose a game</h3>
+
+    <div class="mt-2 card-deck">
+        <div class="card">
+            <img src="images/lucky7.jpg" class="card-img-top img-size" alt="...">
+
+            <div class="card-footer text-center">
+                <button type="button" id="playLucky" class="btn btn-info">Play me !!</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/falls.jpg" class="card-img-top img-size" alt="...">
+            <div class="card-footer text-center">
+                <button type="button" id="playFalls" class="btn btn-info">Play me !!</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/rainbow.jpg" class="card-img-top img-size" alt="...">
+            <div class="card-footer text-center">
+                <button type="button" id="playRainbow" class="btn btn-info">Play me !!</button>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="row mt-4" id="camera-section">
+    <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton" class="video-ctrl">Take photo</button> 
+        <button id="stopbutton"  class="video-ctrl">Stop</button> 
+      </div>
+      <canvas id="canvas">
+      </canvas>
+      <div class="output">
+        <img id="photo"> 
+      </div>
+      <div class="loader m-5"></div>
+
+      <div class="auth-result">
+          <div class="age-valid">
+              
+             <h3><i class="fa fa-check-circle fa-1x" style="color: #4bc14b;"></i>   Age verification</h3>
+             <h3 class="face-match"><i class="fa fa-1x" ></i>   Face matched</h3>
+             <h5 class="playInvalid">You can play the game</h5>
+             <button type="button" id="playGame" class="btn btn-info playInvalid">Play</button>
+          </div>
+          <div class="age-invalid">
+               
+                <h3><i class="fa fa-times-circle fa-1x" style="color: #c14b4b;"></i>   Age verification</h3>
+                <h3 class="face-match"><i class="fa fa-1x" ></i>   Face matched</h3>
+                <h5>Only 18yrs and above !!</h5>
+                
+             </div>
+
+             <div class="age-valid-unhappy">
+                   
+                    <h3><i class="fa fa-check-circle fa-1x" style="color: #4bc14b;"></i>   Age verification</h3>
+                    <h3 class="face-match"><i class="fa fa-1x"></i>   Face matched</h3> 
+                    <h5>You don't seem good</h5>
+                    <h6 class="playInvalid">Are you sure you still want to play ?</h6>
+                    <button type="button" id="playGames" class="btn playInvalid btn-info">Yes</button>
+                 </div>
+
+                 <div class="response-invalid">
+              
+                  <h3><i class="fa fa-times-circle fa-1x" style="color: #c14b4b;"></i>   No Face detected</h3>
+                  <h5>Please capture another photo</h5>
+
+               </div>
+      </div>
+</div>
